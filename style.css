@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+
+}
+
+#clockContainer{
+    background: url("AClock.png") no-repeat center;
+    background-size: contain;
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    border: 2px solid white;
+    margin-top:8rem;
+    box-shadow: 8px 8px 6px -6px black;
+    position: relative;
+    background-color: white;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    transform-origin: bottom;
+
+}
+
+#hour{
+    width: 1%;
+    height: 18.5%;
+    top: 32%;
+    left: 49.7%;
+    opacity: 0.8;
+
+}
+#minute{
+    width: 1%;
+    height: 22.5%;
+    top: 28%;
+    left: 49.7%;
+    opacity: 0.8;
+}
+#second{
+    width: 1%;
+    height: 25%;
+    top: 25.5%;
+    left: 49.7%;
+    opacity: 0.8;
+}
+/* /////////////////////////////////////media queries/////////////////////////////////////// */
+
+@media(max-width:1400px){
+    #clockContainer{
+        width: 40vw;
+        height: 50vh;
+    }
+
+}
+@media(max-width:1000px){
+    #clockContainer{
+        width: 60vw;
+        height: 50vh;
+    }
+
+}
+@media(max-width:640px){
+    #clockContainer{
+        width: 60vw;
+        height: 35vh;
+    }
+
+}
+@media(max-width:450px){
+    #clockContainer{
+        width: 80vw;
+        height: 40vh;
+        margin-top: 13rem;
+    }
+
+}
